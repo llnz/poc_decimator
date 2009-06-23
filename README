@@ -1,0 +1,20 @@
+poc_decimator
+=============
+
+This is the proof of concept (POC) for the JPEG2000 decimator for Lunar Numbat.
+
+Basically, it takes JPEG2000 file and reduces it size very quickly. It does 
+this by dropping quality and/or resolution layers. Because of the properties of
+JPEG2000, this doesn't require the time and cpu expensive decompression and 
+recompression.
+
+
+
+Limitations
+-----------
+
+The current implementation only works with JPEG2000 files that are compressed
+with the SOP option. The Start of Packet (SOP) marker is used to mark the start
+of the packets for the various components, resolutions and quality layers that
+make up the image data.
+
