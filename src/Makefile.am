@@ -1,5 +1,6 @@
 bin_PROGRAMS = poc_decimator
-poc_decimator_SOURCES = box.c decimator.c jp2kcs.c packet.c poc_decimator.c
+poc_decimator_SOURCES = box.c decimator.c jp2kcs.c packet.c poc_decimator.c \
+	runner.py
 
 # set the include path found by configure
 INCLUDES= $(all_includes)
